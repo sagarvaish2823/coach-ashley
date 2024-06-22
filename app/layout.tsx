@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar/navbar";
+import { Toaster } from "sonner";
+import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const font_used = Roboto_Condensed({
+  subsets: ["latin"],
+  // weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+// const font_used = Poppins({
+//   subsets: ["latin"],
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +26,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Toaster richColors position="top-center" />
+      <body className={font_used.className}>
+        <header>
+          <Navbar />
+        </header>
+        <main>{children}</main>
+        <footer>
+          <Footer />
+        </footer>
+      </body>
     </html>
   );
 }
