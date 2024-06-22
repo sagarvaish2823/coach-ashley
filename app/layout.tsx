@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
 import { Roboto_Condensed } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/navbar/navbar";
 import { Toaster } from "sonner";
+
+import "./globals.css";
+
+import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer";
 
 const font_used = Roboto_Condensed({
   subsets: ["latin"],
-  // weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-// const font_used = Poppins({
-//   subsets: ["latin"],
-//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-// });
 
 export const metadata: Metadata = {
   title: "Create Next App",

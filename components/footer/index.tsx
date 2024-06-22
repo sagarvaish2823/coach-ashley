@@ -1,12 +1,21 @@
-import React from "react";
-import Container from "../ui/container";
-import Link from "next/link";
-import { Lock, Youtube } from "lucide-react";
+import {
+  AtSign,
+  GraduationCap,
+  Home,
+  Lock,
+  Mailbox,
+  Mic,
+  User,
+  Youtube,
+} from "lucide-react";
 import Image from "next/image";
-import { LogoImage } from "@/lib/images";
-import { Home, User, GraduationCap, Mic, AtSign, Mailbox } from "lucide-react";
+import Link from "next/link";
 
-const IconClasses = "text-[#FF9A00]";
+import { LogoImage } from "@/lib/images";
+
+import Container from "../ui/container";
+
+const IconClasses = "text-[#FF9A00] icon_size";
 
 const ImportantLinks = [
   {

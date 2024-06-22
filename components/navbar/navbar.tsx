@@ -1,10 +1,10 @@
-import { Home, User, GraduationCap, Mic, AtSign, Mailbox } from "lucide-react";
-import Link from "next/link";
+import { AtSign, GraduationCap, Home, Mailbox, Mic, User } from "lucide-react";
+
+import Container from "../ui/container";
 import NavbarLogo from "./navbar-logo";
 import NavbarMobileMenu from "./navbar-mobile-menu";
-import Container from "../ui/container";
 
-const IconClasses = "text-[#FF9A00]";
+const IconClasses = "text-[#FF9A00] icon_size";
 
 export const links = [
   {

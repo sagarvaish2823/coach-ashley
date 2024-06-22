@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
-import { links } from "./navbar";
+import Link from "next/link";
 
+import { links } from "./navbar";
 import {
   Sheet,
   SheetContent,
@@ -8,7 +9,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import Link from "next/link";
 
 export default function NavbarMobileMenu() {
   return (

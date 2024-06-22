@@ -1,21 +1,20 @@
-import { Fragment } from "react";
-import { Bebas_Neue } from "next/font/google";
 import { PodcastIcon } from "lucide-react";
 import type { Metadata } from "next";
+import { Bebas_Neue } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
-import { cn } from "@/lib/utils";
 import {
   AppleMusicLogoImage,
   AshleyImage,
   SpotifyLogoImage,
   YoutubeLogoImage,
 } from "@/lib/images";
+import { cn } from "@/lib/utils";
 
-import Newsletter from "./_components/newsletter";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
-import Link from "next/link";
+import Newsletter from "./_components/newsletter";
 
 export const metadata: Metadata = {
   title: "Born with a Gift",
@@ -147,7 +146,7 @@ export default function Home() {
   );
 }
 
-export function Podcast() {
+function Podcast() {
   return (
     <Container className="mt-8 relative min-h-[14rem]">
       <div className="lg:flex lg:justify-between lg:w-[50vw] lg:mx-auto">
@@ -186,7 +185,6 @@ export function Podcast() {
           ))}
         </div>
       </div>
-      {/* TODO: ADD LOGOS SPOTIFY, APPLE PODCAST, YOUTUBE - INFINITE CAROUSAL*/}
     </Container>
   );
 }

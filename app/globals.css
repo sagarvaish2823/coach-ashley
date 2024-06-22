@@ -121,13 +121,6 @@ input[type="number"] {
   .icon_size {
     @apply h-8 w-8 lg-2k:h-12 lg-2k:w-12;
   }
-  .button_main {
-    @apply rounded-xl border border-black text-center text-base font-normal text-white transition-all delay-75 duration-200 ease-linear hover:px-8 hover:text-black hover:shadow-lg dark:border-white dark:text-black md:text-xl lg-2k:py-[2rem] lg-2k:text-[2rem];
-  }
-
-  .button_landing_page {
-    @apply rounded-full bg-primary-accent text-xl text-black transition-colors hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black;
-  }
   .page_heading {
     @apply text-5xl font-bold md:text-5xl lg:text-6xl;
   }
@@ -146,58 +139,4 @@ input[type="number"] {
   .page_para {
     @apply text-balance text-lg md:text-xl;
   }
-  .form_label {
-    @apply text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70;
-  }
-  .form_input {
-    @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
-  }
-  .form_radio {
-    @apply w-[100%] rounded-xl border bg-gray-100 px-8 py-2 ring-2 ring-transparent transition-all hover:shadow peer-checked:text-black peer-checked:ring-yellow-400 peer-checked:ring-offset-2 dark:bg-zinc-900 dark:peer-checked:text-white;
-  }
-  .secondary_text_color {
-    @apply text-gray-600 dark:text-gray-400;
-  }
-  .form_button {
-    @apply w-full border;
-  }
-  .sitemap_button {
-    @apply min-w-[8rem] font-bold transition-colors;
-  }
-}
-
-@layer components {
-  .query_image_wrapper {
-    @apply max-h-[25rem] max-w-[25rem] overflow-hidden rounded-2xl shadow-md;
-  }
-  .query_image_card {
-    @apply relative h-[25rem] w-[25rem] border;
-  }
-  .query_image {
-    @apply object-cover grayscale transition-all duration-300 hover:scale-110 hover:grayscale-0;
-  }
-
-  /* POLICIES */
-
-  .policy_title {
-    @apply page_para_heading scroll-mt-8 rounded-lg bg-primary-accent px-4 text-black lg:ml-6;
-  }
-  .toc_body {
-    @apply sticky top-4 min-h-[15rem] min-w-[350px] max-w-[350px] rounded-xl bg-[#f5f5f5] px-2 py-4 dark:bg-[#262626];
-  }
-  .toc_links {
-    @apply w-full rounded-lg bg-white p-2 focus-within:bg-[#c7c7c7] dark:bg-[#0a0a0a] dark:focus-within:bg-[#525050];
-  }
-  .pm_card {
-    @apply flex min-h-[30rem] flex-col rounded-2xl border-black pt-8 transition-all hover:border-primary-accent dark:border-white dark:hover:border-primary-accent;
-  }
-}
-
-/* FAQS */
-.faq_title {
-  @apply page_para_heading scroll-mt-8 text-black dark:text-white;
-}
-
-.scroll {
-  text-wrap: nowrap !important;
 }
